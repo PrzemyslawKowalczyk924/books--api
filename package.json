@@ -1,9 +1,17 @@
 {
-  "name": "BooksApi",
+  "name": "books--api",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "mocha --watch \"./{,!(node_modules)/**/}*.test.js\""
+  },
   "dependencies": {
-    "express": "^4.17.1"
+    "chai": "4.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mocha": "6.2.1",
+    "nodemon": "^2.0.7"
   }
 }
